@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .card {
+      margin-bottom: 1rem;
+    }
+  </style>
+
+  <title>Attacks</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+
+    <!--
+    https://www.dndbeyond.com/sources/basic-rules/combat
+    http://dnd5e.wikidot.com/spells:warlock
+    https://getbootstrap.com/docs/4.5/getting-started/introduction/
+    -->
+
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-primary" role="alert">
+          <h3>Attacks</h3>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Slice w/ Rapier</h5>
+            <hr>
+            <p class="card-text">To Hit: 1d20 + Charisma</p>
+            <p class="card-text">Damage: 1d8 + Charisma + 2</p>
+            <p class="card-text">Costs 1 action</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Slice w/ Dagger</h5>
+            <hr>
+            <p class="card-text">To Hit: 1d20 + Dexterity</p>
+            <p class="card-text">Damage: 1d4 piercing</p>
+            <p class="card-text">Costs 1 action</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-success" role="alert">
+          <h3>Cantrips</h3>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Eldritch Blast</h5>
+            <hr>
+            <div class="card-text">
+              <p>Casting Time: 1 action</p>
+              <p>To Hit: 1d20 + Spell Mod (5)</p>
+              <p>Damage: 1d10 + CHA (Agonizing Blast)</p>
+              <p>Costs 1 action</p>
+            </div>
+            <a href="http://dnd5e.wikidot.com/spell:eldritch-blast"
+              class="btn btn-primary">Link to Wiki</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Charm Person</h5>
+            <hr>
+            <p class="card-text">Enemy must make Wisdom saving throw</p>
+            <p class="card-text">IN COMBAT: enemies get advantage</p>
+            <p class="card-text">Roll must be higher than: 8 + proficiency bonus
+              (2) + casting ability modifier (cha, 3)</p>
+            <p class="card-text">Costs 1 action</p>
+            <a href="https://5thsrd.org/spellcasting/spells/charm_person/"
+              class="btn btn-primary">Link to 5thsrd.org</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Minor Illusion</h5>
+            <hr>
+            <p class="card-text">Lasts 1 minute, or until dismissed by using an
+              action or casting again</p>
+            <p class="card-text">Costs 1 action</p>
+            <a href="https://5thsrd.org/spellcasting/spells/minor_illusion/"
+              class="btn btn-primary">Link to 5thsrd.org</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-danger" role="alert">
+          <h3>Level Spells</h3>
+        </div>
+
+        <div class="alert alert-light" role="alert">
+          <h5>Level 1</h5>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+              value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+              value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">2</label>
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Hex</h5>
+            <hr>
+            <p class="card-text">
+            <p>Casting Time: 1 bonus action</p>
+            <p>Range: 90 feet</p>
+            <p>Duration: Concentration, up to 1 hour</p>
+            <p>You place a curse on a creature that you can see within range.
+              Until the spell
+              ends, you deal an extra 1d6 necrotic damage to the target whenever
+              you hit it
+              with an attack. Also, choose one ability when you cast the spell.
+              The target has
+              disadvantage on ability checks made with the chosen ability.
+
+              If the target drops to 0 hit points before this spell ends, you
+              can use a bonus
+              action on a subsequent turn of yours to curse a new creature.</p>
+            </p>
+            <a href="http://dnd5e.wikidot.com/spell:hex"
+              class="btn btn-primary">Link to Wikidot</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Wrathful Smite</h5>
+            <hr>
+            <p class="card-text">
+            <p>Casting Time: 1 bonus action</p>
+            <p>Range: Self</p>
+            <p>Duration: Concentration, up to 1 minute</p>
+            <p>The next time you hit with a melee weapon attack during this
+              spell’s duration,
+              your attack deals an extra 1d6 psychic damage. Additionally, if
+              the target is a
+              creature, it must make a Wisdom saving throw or be frightened of
+              you until the
+              spell ends. As an action, the creature can make a Wisdom check
+              against your
+              spell save DC to steel its resolve and end this spell.</p>
+            </p>
+            <a href="http://dnd5e.wikidot.com/spell:wrathful-smite"
+              class="btn btn-primary">Link to
+              Wikidot</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Shield</h5>
+            <hr>
+            <p class="card-text">
+            <p>Casting Time: 1 reaction, which you take when you are hit by an
+              attack or targeted by the Magic Missile spell</p>
+            <p>Range: Self</p>
+            <p>Duration: 1 round</p>
+            <p>An invisible barrier of magical force appears and protects you.
+              Until the start
+              of your next turn, you have a +5 bonus to AC, including against
+              the triggering
+              attack, and you take no damage from Magic Missile.</p>
+            </p>
+            <a href="http://dnd5e.wikidot.com/spell:shield"
+              class="btn btn-primary">Link to Wikidot</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
